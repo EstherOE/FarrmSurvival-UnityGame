@@ -11,6 +11,7 @@ public class ChickenScript : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             GameManager.Instance.CollectEgg(collectionValue);
+            FindObjectOfType<GameManager>().RelocateRandomChicken();
       
             Destroy(gameObject);
         }
