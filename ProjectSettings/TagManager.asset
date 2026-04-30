@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - 
+  - cofetti
   - 
   - 
-  - 
-  - 
+  - panel
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: confetti
+    uniqueID: 362864695
+    locked: 0
+  - name: panel
+    uniqueID: 3381940949
     locked: 0

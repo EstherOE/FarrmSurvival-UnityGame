@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ChickenScript : MonoBehaviour
-{    void OnTriggerEnter(Collider other)
+
+{
+    public static int collectionValue=1;
+        void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-       //     GameManager.instance.CollectEgg();
+            GameManager.Instance.CollectEgg(collectionValue);
+      
             Destroy(gameObject);
         }
     }
